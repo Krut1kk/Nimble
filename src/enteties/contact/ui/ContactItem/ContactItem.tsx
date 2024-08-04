@@ -3,13 +3,13 @@ import { FC } from "react";
 import { Link, useLocation } from "react-router-dom";
 // constants
 import { getSingleContactRoute } from "@/shared/libs/constants/routes";
+import { useDeleteContact } from "../../libs/constants/contactQueryHooks";
 // assets
 import DeleteIcon from "../../libs/assets/svg/deleteIcon.svg?react";
 // types
 import { IContact } from "../../model/types/contactTypes";
 // styles
 import styles from "./ContactItem.module.scss";
-import { useDeleteContact } from "../../libs/constants/contactQueryHooks";
 
 interface ContactItemProps extends IContact {}
 
@@ -17,9 +17,6 @@ export const ContactItem: FC<ContactItemProps> = ({
   id,
   avatar_url,
   fields,
-  owner_id,
-  privacy,
-  record_type,
   tags,
 }) => {
   const { pathname } = useLocation();

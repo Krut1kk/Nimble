@@ -39,7 +39,12 @@ export const SingleContactAddTagForm: FC<SingleContactAddTagFormProps> = ({
 
   return (
     <div className={styles.SingleContactAddTagForm}>
-      <Input value={text} onChange={onChange} placeholder="Add new tag" />
+      <Input
+        value={text}
+        onChange={onChange}
+        placeholder="Add new tag"
+        type="text"
+      />
       <Button onClick={onAddTagButtonClick}> Add Tag </Button>
     </div>
   );
