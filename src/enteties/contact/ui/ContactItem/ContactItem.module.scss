@@ -1,0 +1,66 @@
+.ContactItem {
+  width: 100%;
+  max-width: 558px;
+  min-height: 98px;
+  border-radius: 4px;
+  background-color: #ededed;
+  position: relative;
+
+  .content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .topContainer {
+      .topContent {
+        display: flex;
+        gap: 12px;
+
+        .avatar {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+        }
+        .userInfo {
+          .name {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: black;
+          }
+        }
+      }
+    }
+
+    .bottomContainer {
+      .bottomContent {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        .tag {
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 19.5px;
+          min-width: 54px;
+          max-width: 102px;
+          overflow: hidden;
+          height: 20px;
+          padding: 0px 12px 0px 12px;
+          gap: 10px;
+          border-radius: 4px;
+          background-color: #a6a6a6;
+        }
+      }
+    }
+
+    .deleteIcon {
+      cursor: pointer;
+      top: 15px;
+      right: 15px;
+      position: absolute;
+    }
+  }
+}
